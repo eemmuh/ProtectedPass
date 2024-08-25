@@ -23,6 +23,7 @@ public class passgenGUI extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(700, 450);
         setLayout(null);
+        //setBackground(Color.BLACK);
         setResizable(false);
         setLocationRelativeTo(null);
 
@@ -38,6 +39,8 @@ public class passgenGUI extends JFrame {
 
         JLabel passgenTitle = new JLabel("ProtectedPass");
         passgenTitle.setFont(new Font("Cambria", Font.BOLD, 28));
+        passgenTitle.setForeground(Color.YELLOW);
+        //passgenTitle.setBackground(Color.BLACK);
         passgenTitle.setHorizontalAlignment(SwingConstants.CENTER);
         passgenTitle.setBounds(0, 10, 675, 30);
         add(passgenTitle);
@@ -50,7 +53,7 @@ public class passgenGUI extends JFrame {
 
         // add scroll
         JScrollPane showPassScroll = new JScrollPane(showPass);
-        showPassScroll.setBorder(BorderFactory.createLineBorder(Color.YELLOW));
+        showPassScroll.setBorder(BorderFactory.createLineBorder(Color.GREEN));
         showPassScroll.setBounds(25, 70, 650, 70);
         add(showPassScroll);
 
@@ -64,7 +67,7 @@ public class passgenGUI extends JFrame {
         // create password length input
         JTextArea passwordLengthInputArea = new JTextArea();
         passwordLengthInputArea.setFont(new Font("Dialog", Font.PLAIN, 32));
-        passwordLengthInputArea.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        passwordLengthInputArea.setBorder(BorderFactory.createLineBorder(Color.BLUE));
         passwordLengthInputArea.setBounds(110, 190, 150, 39);
         add(passwordLengthInputArea);
 
@@ -73,31 +76,31 @@ public class passgenGUI extends JFrame {
         // uppercase
         JToggleButton uppercaseToggle = new JToggleButton("Uppercase");
         uppercaseToggle.setFont(new Font("Dialog", Font.PLAIN, 12));
-        uppercaseToggle.setBounds(75, 250, 100, 56);
+        uppercaseToggle.setBounds(125, 250, 100, 56);
         add(uppercaseToggle);
 
         // lowercase
         JToggleButton lowercaseToggle = new JToggleButton("Lowercase");
         lowercaseToggle.setFont(new Font("Dialog", Font.PLAIN, 12));
-        lowercaseToggle.setBounds(200, 250, 100, 56);
+        lowercaseToggle.setBounds(250, 250, 100, 56);
         add(lowercaseToggle);
 
         // numbers
         JToggleButton numbersToggle = new JToggleButton("Numbers");
         numbersToggle.setFont(new Font("Dialog", Font.PLAIN, 12));
-        numbersToggle.setBounds(325, 250, 100, 56);
+        numbersToggle.setBounds(375, 250, 100, 56);
         add(numbersToggle);
 
         // symbols toggle
         JToggleButton symbolsToggle = new JToggleButton("Symbols");
         symbolsToggle.setFont(new Font("Dialog", Font.PLAIN, 12));
-        symbolsToggle.setBounds(450, 250, 100, 56);
+        symbolsToggle.setBounds(500, 250, 100, 56);
         add(symbolsToggle);
 
         // create generate button
         JButton generateButton = new JButton("Generate");
         generateButton.setFont(new Font("Dialog", Font.PLAIN, 12));
-        generateButton.setBounds(225, 325, 150, 42);
+        generateButton.setBounds(275, 325, 150, 42);
 
         generateButton.addActionListener(new ActionListener() {
             @Override
@@ -142,3 +145,4 @@ public class passgenGUI extends JFrame {
         add(generateButton);
     }
 }
+
