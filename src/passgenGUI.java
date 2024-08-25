@@ -114,8 +114,8 @@ public class passgenGUI extends JFrame {
 
                     int passwordLength = Integer.parseInt(lengthText);
 
-                    if (passwordLength < 8) {
-                        JOptionPane.showMessageDialog(passgenGUI.this, "Password length must be greater than eight characters.");
+                    if (passwordLength <= 8) {
+                        JOptionPane.showMessageDialog(passgenGUI.this, "Password length must be at least eight characters.");
                         return;
                     }
 
