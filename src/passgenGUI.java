@@ -14,7 +14,7 @@ public class passgenGUI extends JFrame {
 
     private passwordgenbackend passwordgenBackend;
 
-
+    
     public passgenGUI() {
 
         //title
@@ -23,7 +23,7 @@ public class passgenGUI extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(700, 450);
         setLayout(null);
-        //setBackground(Color.BLACK);
+        getContentPane().setBackground(Color.darkGray);
         setResizable(false);
         setLocationRelativeTo(null);
 
@@ -40,7 +40,6 @@ public class passgenGUI extends JFrame {
         JLabel passgenTitle = new JLabel("ProtectedPass");
         passgenTitle.setFont(new Font("Cambria", Font.BOLD, 28));
         passgenTitle.setForeground(Color.YELLOW);
-        //passgenTitle.setBackground(Color.BLACK);
         passgenTitle.setHorizontalAlignment(SwingConstants.CENTER);
         passgenTitle.setBounds(0, 10, 675, 30);
         add(passgenTitle);
@@ -61,6 +60,7 @@ public class passgenGUI extends JFrame {
         // create password length label
         JLabel passwordLengthLabel = new JLabel("Length: ");
         passwordLengthLabel.setFont(new Font("Dialog", Font.PLAIN, 20));
+        passwordLengthLabel.setForeground(Color.YELLOW);
         passwordLengthLabel.setBounds(35, 190, 200, 39);
         add(passwordLengthLabel);
 
