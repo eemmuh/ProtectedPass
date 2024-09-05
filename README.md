@@ -2,11 +2,10 @@
 
 
 
-This app generates a unique, random password based on the user’s desired length and type of characters. 
+This app generates a random password with user's desired characters: uppercase, lowercase, numbers, and/or symbols.
 
 
 
 
-Password has to be greater than eight characters in length.
-
+Password must be at least eight characters in length.
 
